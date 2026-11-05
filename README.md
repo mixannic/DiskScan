@@ -34,14 +34,30 @@
 
 ## Quick Start / Быстрый старт
 
+### From source / Из исходного кода
+
 ```bash
 # Clone the repository / Клонируйте репозиторий
-git clone https://github.com/<your-username>/DiskScan.git
+git clone https://github.com/mixannic/DiskScan.git
 cd DiskScan
 
 # Run the application / Запустите приложение
 python diskscan.py
 ```
+
+### Pre-built executable / Готовый исполняемый файл (Windows)
+
+A ready-to-run Windows executable is available in the **Releases** section of this repository:
+
+Готовый исполняемый файл для Windows доступен в разделе **Releases** этого репозитория:
+
+- **File:** `Анализатор дискового пространства.exe` (~8.2 MB)
+- **Packaged with:** PyInstaller (single-file, windowed, no console)
+- **No Python installation required** / Не требует установки Python
+
+Simply download the `.exe` from the latest Release and run it.
+
+Просто скачайте `.exe` из последнего Releases и запустите его.
 
 ---
 
@@ -49,11 +65,16 @@ python diskscan.py
 
 ```
 DiskScan/
-├── diskscan.py   # Main application script / Основной скрипт приложения
-├── README.md     # This file / Этот файл
-├── LICENSE       # MIT License / Лицензия MIT
-└── .gitignore    # Git ignored files / Игнорируемые файлы Git
+├── diskscan.py                              # Main application script / Основной скрипт приложения
+├── Анализатор дискового пространства.spec   # PyInstaller spec file / Файл спецификации PyInstaller
+├── README.md                                # This file / Этот файл
+├── LICENSE                                  # MIT License / Лицензия MIT
+└── .gitignore                               # Git ignored files / Игнорируемые файлы Git
 ```
+
+> The compiled `dist\Анализатор дискового пространства.exe` (~8.2 MB) is distributed via GitHub Releases and is **not** committed to the repository.
+>
+> Собранный `dist\Анализатор дискового пространства.exe` (~8.2 МБ) распространяется через GitHub Releases и **не** фиксируется в репозитории.
 
 ---
 
@@ -68,6 +89,26 @@ DiskScan/
 
 ---
 
+## Rebuilding the EXE / Пересборка EXE
+
+The application is packaged with **PyInstaller**. The `.spec` file is included in the repository for reproducible builds.
+
+Приложение упаковано с помощью **PyInstaller**. Файл `.spec` включён в репозиторий для воспроизводимой сборки.
+
+```bash
+# Install PyInstaller / Установите PyInstaller
+pip install pyinstaller
+
+# Build the executable / Соберите исполняемый файл
+pyinstaller "Анализатор дискового пространства.spec"
+```
+
+The output will appear in `dist\Анализатор дискового пространства.exe`.
+
+Результат появится в `dist\Анализатор дискового пространства.exe`.
+
+---
+
 ## License / Лицензия
 
 Distributed under the **MIT** license. See the `LICENSE` file. / Распространяется под лицензией **MIT**. См. файл `LICENSE`.
@@ -76,7 +117,6 @@ Distributed under the **MIT** license. See the `LICENSE` file. / Распрос�
 
 ## Roadmap / Планы развития
 
-- Packaging into standalone `.exe` (PyInstaller, cx_Freeze, etc.) / Упаковка в автономный `.exe` (PyInstaller, cx_Freeze и др.)
 - Split into modules (`ui`, `scanner`, `utils`) / Разбиение на модули
 - Unit tests (pytest / unittest) / Тесты
 - Save settings and scan history / Сохранение настроек и истории сканирований

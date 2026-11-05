@@ -42,3 +42,10 @@ env/
 # OS
 .DS_Store
 Thumbs.db
+
+# PyInstaller build artifacts (do not commit; EXE distributed via GitHub Releases)
+build/
+dist/
+*.exe
+*.spec
+!Анализатор дискового пространства.spec
