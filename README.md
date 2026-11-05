@@ -51,7 +51,7 @@ A ready-to-run Windows executable is available in the **Releases** section of th
 
 Готовый исполняемый файл для Windows доступен в разделе **Releases** этого репозитория:
 
-- **File:** `Анализатор дискового пространства.exe` (~8.2 MB)
+- **File:** `DiskScan_v1_0_0.exe` (~8.2 MB)
 - **Packaged with:** PyInstaller (single-file, windowed, no console)
 - **No Python installation required** / Не требует установки Python
 
@@ -72,9 +72,9 @@ DiskScan/
 └── .gitignore                               # Git ignored files / Игнорируемые файлы Git
 ```
 
-> The compiled `dist\Анализатор дискового пространства.exe` (~8.2 MB) is distributed via GitHub Releases and is **not** committed to the repository.
+> The compiled `dist\DiskScan_v1_0_0.exe` (~8.2 MB) is distributed via GitHub Releases and is **not** committed to the repository.
 >
-> Собранный `dist\Анализатор дискового пространства.exe` (~8.2 МБ) распространяется через GitHub Releases и **не** фиксируется в репозитории.
+> Собранный `dist\DiskScan_v1_0_0.exe` (~8.2 МБ) распространяется через GitHub Releases и **не** фиксируется в репозитории.
 
 ---
 
@@ -103,9 +103,9 @@ pip install pyinstaller
 pyinstaller "Анализатор дискового пространства.spec"
 ```
 
-The output will appear in `dist\Анализатор дискового пространства.exe`.
+The output will appear in `dist\DiskScan_v1_0_0.exe`.
 
-Результат появится в `dist\Анализатор дискового пространства.exe`.
+Результат появится в `dist\DiskScan_v1_0_0.exe`.
 
 ---
 
