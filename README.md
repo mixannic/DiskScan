@@ -1,5 +1,10 @@
 # DiskScan — Disk Space Analyzer / Анализатор дискового пространства
 
+![Python](https://img.shields.io/badge/python-3.8%2B-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux-lightgrey)
+![Version](https://img.shields.io/badge/version-v1.0.0-orange)
+
 > Cross-platform desktop application (Windows / Linux) with a Tkinter GUI for analyzing used disk space. Quickly find large folders and files, browse directory hierarchies with recursive sizes, and apply filters.
 >
 > Кроссплатформенное десктопное приложение (Windows / Linux) с графическим интерфейсом на Tkinter для анализа занятого дискового пространства. Быстро находите крупные папки и файлы, просматривайте иерархию каталогов с рекурсивными размерами и применяйте фильтры.
@@ -21,6 +26,12 @@
 | Skips symbolic links and junction points | Пропуск символических ссылок и точек соединения |
 | Handles `PermissionError` / `OSError` without crashing | Обработка ошибок доступа (`PermissionError`, `OSError`) без прерывания работы |
 | Supports folder creation/change time (birthtime, ctime, mtime depending on OS) | Поддержка времени создания/изменения папки (birthtime, ctime, mtime в зависимости от ОС) |
+
+---
+
+## Screenshot / Скриншот
+
+![DiskScan application window](screenshot_20261105_091156.png)
 
 ---
 
